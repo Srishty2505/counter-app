@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter app</title>
+    <link rel="stylesheet" href="counterapp.css">
+</head>
+<body>
+<div id="box">
+<h1 id="data">0</h1>
+<button  onclick="increase()">Increment</button>
+<button onclick="decrease()">Decrement</button>
+<button onclick="reset()">Reset</button>
+</div>
+    <script>
+
+        var output=0
+
+        function increase()
+        {
+         output=output+1
+            var tar=document.getElementById('data');
+            
+                tar.innerHTML=output
+
+        }
+        function decrease()
+        {
+            if(output<=0)
+            {
+                alert("negative values are not allowed")
+            }
+            else 
+            {
+            output=output-1
+
+            var tar=document.getElementById('data');
+
+            tar.innerHTML=output
+            }
+         
+
+        }
+        function reset()
+        {
+          output=0
+            var tar=document.getElementById('data');
+            
+                tar.innerHTML=output;
+
+        }
+
+
+//          var value=0 
+         
+//          function increase()
+//          {
+//             value=value+1;
+
+//             var tar=document.getElementById('data');
+
+//             tar.innerHTML=value;
+//          }
+
+//          function decrease()
+//             {
+
+//                 if(value<=0)
+//                 {
+// alert("negative values are not allowed")
+//                 }
+//                 else{
+//                     value=value-1
+//             var tar=document.getElementById('data');
+//             tar.innerHTML=value;
+//             }
+//         }
+           
+//             function reset()
+//             {
+//                 value=0
+//                 var tar=document.getElementById('data');
+//             tar.innerHTML=value;
+//             }
+         
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
